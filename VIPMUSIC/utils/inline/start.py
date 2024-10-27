@@ -1,74 +1,74 @@
-ғʀᴏᴍ ᴘʏʀᴏɢʀᴀᴍ.ᴛʏᴘᴇs ɪᴍᴘᴏʀᴛ ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ
+from pyrogram.types import InlineKeyboardButton
 
-ɪᴍᴘᴏʀᴛ ᴄᴏɴғɪɢ
-ғʀᴏᴍ ᴄᴏɴғɪɢ ɪᴍᴘᴏʀᴛ sᴜᴘᴘᴏʀᴛ_ɢʀᴏᴜᴘ
-ғʀᴏᴍ ᴠɪᴘᴍᴜsɪᴄ ɪᴍᴘᴏʀᴛ ᴀᴘᴘ
+import config
+from config import SUPPORT_GROUP
+from VIPMUSIC import app
 
 
-ᴅᴇғ sᴛᴀʀᴛ_ᴘᴀɴɴᴇʟ(_):
-    ʙᴜᴛᴛᴏɴs = [
+def start_pannel(_):
+    buttons = [
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(
-                ᴛᴇxᴛ=" ˹𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂˼ ",
-                ᴜʀʟ=ғ"ʜᴛᴛᴘs://ᴛ.ᴍᴇ/{ᴀᴘᴘ.ᴜsᴇʀɴᴀᴍᴇ}?sᴛᴀʀᴛɢʀᴏᴜᴘ=ᴛʀᴜᴇ",
+            InlineKeyboardButton(
+                text=" ˹𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂˼ ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             ),
         ],
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ="𝐇𝙴𝙻𝙿", ᴄᴀʟʟʙᴀᴄᴋ_ᴅᴀᴛᴀ="sᴇᴛᴛɪɴɢs_ʙᴀᴄᴋ_ʜᴇʟᴘᴇʀ"),
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ=" 𝐒𝙴𝚃 ", ᴄᴀʟʟʙᴀᴄᴋ_ᴅᴀᴛᴀ="sᴇᴛᴛɪɴɢs_ʜᴇʟᴘᴇʀ"),
+            InlineKeyboardButton(text="𝐇𝙴𝙻𝙿", callback_data="settings_back_helper"),
+            InlineKeyboardButton(text=" 𝐒𝙴𝚃 ", callback_data="settings_helper"),
         ],
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ=" 𝐆𝚁𝙾𝚄𝙿 ", ᴜʀʟ=ᴄᴏɴғɪɢ.sᴜᴘᴘᴏʀᴛ_ɢʀᴏᴜᴘ),
+            InlineKeyboardButton(text=" 𝐆𝚁𝙾𝚄𝙿 ", url=config.SUPPORT_GROUP),
         ],
     ]
-    ʀᴇᴛᴜʀɴ ʙᴜᴛᴛᴏɴs
+    return buttons
 
 
-ᴅᴇғ ᴘʀɪᴠᴀᴛᴇ_ᴘᴀɴᴇʟ(_):
-    ʙᴜᴛᴛᴏɴs = [
+def private_panel(_):
+    buttons = [
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(
-                ᴛᴇxᴛ=" ˹ 𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂 ˼ ",
-                ᴜʀʟ=ғ"ʜᴛᴛᴘs://ᴛ.ᴍᴇ/{ᴀᴘᴘ.ᴜsᴇʀɴᴀᴍᴇ}?sᴛᴀʀᴛɢʀᴏᴜᴘ=ᴛʀᴜᴇ",
+            InlineKeyboardButton(
+                text=" ˹ 𝐀𝙳𝙳 𝙼𝙴 𝙸𝙽 𝙽𝙴𝚆 𝙶𝚁𝙾𝚄𝙿𝚂 ˼ ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ="𝐆𝚁𝙾𝚄𝙿", ᴜʀʟ=ᴄᴏɴғɪɢ.sᴜᴘᴘᴏʀᴛ_ɢʀᴏᴜᴘ),
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ="𝐌ᴏʀᴇ", ᴜʀʟ=ᴄᴏɴғɪɢ.sᴜᴘᴘᴏʀᴛ_ᴄʜᴀɴɴᴇʟ),
+            InlineKeyboardButton(text="𝐆𝚁𝙾𝚄𝙿", url=config.SUPPORT_GROUP),
+            InlineKeyboardButton(text="𝐌ᴏʀᴇ", url=config.SUPPORT_CHANNEL),
         ],
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(
-                ᴛᴇxᴛ=" 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ", ᴄᴀʟʟʙᴀᴄᴋ_ᴅᴀᴛᴀ="sᴇᴛᴛɪɴɢs_ʙᴀᴄᴋ_ʜᴇʟᴘᴇʀ"
+            InlineKeyboardButton(
+                text=" 𝐅𝙴𝙰𝚃𝚄𝚁𝙴𝚂 ", callback_data="settings_back_helper"
             )
         ],
     ]
-    ʀᴇᴛᴜʀɴ ʙᴜᴛᴛᴏɴs
+    return buttons
 
 
-ᴅᴇғ ᴀʟɪᴠᴇ_ᴘᴀɴᴇʟ(_):
-    ʙᴜᴛᴛᴏɴs = [
+def alive_panel(_):
+    buttons = [
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(
-                ᴛᴇxᴛ=" ˹ ᴀᴅᴅ ᴍᴇ ˼ ", ᴜʀʟ=ғ"ʜᴛᴛᴘs://ᴛ.ᴍᴇ/{ᴀᴘᴘ.ᴜsᴇʀɴᴀᴍᴇ}?sᴛᴀʀᴛɢʀᴏᴜᴘ=ᴛʀᴜᴇ"
+            InlineKeyboardButton(
+                text=" ˹ ᴀᴅᴅ ᴍᴇ ˼ ", url=f"https://t.me/{app.username}?startgroup=true"
             ),
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ=_["s_ʙ_𝟹"], ᴜʀʟ=ғ"{sᴜᴘᴘᴏʀᴛ_ɢʀᴏᴜᴘ}"),
+            InlineKeyboardButton(text=_["S_B_3"], url=f"{SUPPORT_GROUP}"),
         ],
     ]
-    ʀᴇᴛᴜʀɴ ʙᴜᴛᴛᴏɴs
+    return buttons
 
 
-ᴅᴇғ ᴍᴜsɪᴄ_sᴛᴀʀᴛ_ᴘᴀɴᴇʟ(_):
-    ʙᴜᴛᴛᴏɴs = [
+def music_start_panel(_):
+    buttons = [
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(
-                ᴛᴇxᴛ=" ˹  ᴀᴅᴅ ᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ  ˼ ",
-                ᴜʀʟ=ғ"ʜᴛᴛᴘs://ᴛ.ᴍᴇ/{ᴀᴘᴘ.ᴜsᴇʀɴᴀᴍᴇ}?sᴛᴀʀᴛɢʀᴏᴜᴘ=ᴛʀᴜᴇ",
+            InlineKeyboardButton(
+                text=" ˹  ᴀᴅᴅ ᴍᴇ ɪɴ ɴᴇᴡ ɢʀᴏᴜᴘ  ˼ ",
+                url=f"https://t.me/{app.username}?startgroup=true",
             )
         ],
         [
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ="ᴀʙᴏᴜᴛ ", ᴄᴀʟʟʙᴀᴄᴋ_ᴅᴀᴛᴀ="ᴀʙᴏᴜᴛ"),
-            ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ="sᴜᴘᴘᴏʀᴛ ", ᴄᴀʟʟʙᴀᴄᴋ_ᴅᴀᴛᴀ="sᴜᴘᴘᴏʀᴛ"),
+            InlineKeyboardButton(text="ᴀʙᴏᴜᴛ ", callback_data="about"),
+            InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ ", callback_data="support"),
         ],
-        [ɪɴʟɪɴᴇᴋᴇʏʙᴏᴀʀᴅʙᴜᴛᴛᴏɴ(ᴛᴇxᴛ=" ғᴇᴀᴛᴜʀᴇ ", ᴄᴀʟʟʙᴀᴄᴋ_ᴅᴀᴛᴀ="ғᴇᴀᴛᴜʀᴇ")],
+        [InlineKeyboardButton(text=" ғᴇᴀᴛᴜʀᴇ ", callback_data="feature")],
     ]
-    ʀᴇᴛᴜʀɴ ʙᴜᴛᴛᴏɴs
+    return buttons
