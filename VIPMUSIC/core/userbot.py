@@ -65,10 +65,10 @@ class Userbot(Client):
         if config.STRING1:
             await self.one.start()
             try:
-                await self.one.join_chat("THE_VIP_BOY_OP")
-                await self.one.join_chat("THE_VIP_BOY")
-                await self.one.join_chat("TG_FRIENDSS")
-                await self.one.join_chat("VIP_CREATORS")
+                await self.one.join_chat("ANIME_CHAT_ANG")
+                await self.one.join_chat("ANIME_CHAT_ANG")
+                await self.one.join_chat("ANIME_CHAT_ANG")
+                await self.one.join_chat("ANIME_CHAT_ANG")
             except:
                 pass
             assistants.append(1)
@@ -93,10 +93,10 @@ class Userbot(Client):
         if config.STRING2:
             await self.two.start()
             try:
-                await self.two.join_chat("TheVIP")
-                await self.two.join_chat("VIPSupport")
-                await self.two.join_chat("THE-VIP-BOY-OP")
-                await self.two.join_chat("TheTeamVk")
+                await self.two.join_chat("ANIME_CHAT_ANG")
+                await self.two.join_chat("ANIME_CHAT_ANG")
+                await self.two.join_chat("ANIME_CHAT_ANG")
+                await self.two.join_chat("ANIME_CHAT_ANG")
             except:
                 pass
             assistants.append(2)
@@ -121,10 +121,10 @@ class Userbot(Client):
         if config.STRING3:
             await self.three.start()
             try:
-                await self.three.join_chat("TheVIP")
-                await self.three.join_chat("VIPSupport")
-                await self.three.join_chat("THE-VIP-BOY-OP")
-                await self.three.join_chat("TheTeamVk")
+                await self.three.join_chat("ANIME_CHAT_ANG")
+                await self.three.join_chat("ANIME_CHAT_ANG")
+                await self.three.join_chat("ANIME_CHAT_ANG")
+                await self.three.join_chat("ANIME_CHAT_ANG")
             except:
                 pass
             assistants.append(3)
