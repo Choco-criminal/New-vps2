@@ -68,7 +68,7 @@ async def ban_new(client, message):
 async def start_comm(client, message: Message, _):
     chat_id = message.chat.id
     await add_served_user(message.from_user.id)
-    await message.react("🕊️")
+    await message.react("💘")
     if len(message.text.split()) > 1:
         name = message.text.split(None, 1)[1]
         if name[0:4] == "help":
@@ -76,8 +76,8 @@ async def start_comm(client, message: Message, _):
                 paginate_modules(0, HELPABLE, "help", close=True)
             )
             if config.START_IMG_URL:
-                return await message.reply_photo(
-                    photo=START_IMG_URL,
+                return await message.reply_video(
+                    video=START_IMG_URL,
                     caption=_["help_1"],
                     reply_markup=keyboard,
                 )
@@ -194,20 +194,20 @@ async def start_comm(client, message: Message, _):
             searched_text = f"""
 🔍__**ᴠɪᴅᴇᴏ ᴛʀᴀᴄᴋ ɪɴғᴏʀᴍᴀᴛɪᴏɴ**__
 
-❇️**ᴛɪᴛʟᴇ:** {title}
+**ᴛɪᴛʟᴇ:** {title}
 
-⏳**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
-👀**ᴠɪᴇᴡs:** `{views}`
-⏰**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
-🎥**ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:** {channel}
-📎**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ғʀᴏᴍ ʜᴇʀᴇ]({channellink})
-🔗**ᴠɪᴅᴇᴏ ʟɪɴᴋ:** [ʟɪɴᴋ]({link})
+**ᴅᴜʀᴀᴛɪᴏɴ:** {duration} Mins
+**ᴠɪᴇᴡs:** `{views}`
+**ᴘᴜʙʟɪsʜᴇᴅ ᴛɪᴍᴇ:** {published}
+**ᴄʜᴀɴɴᴇʟ ɴᴀᴍᴇ:** {channel}
+**ᴄʜᴀɴɴᴇʟ ʟɪɴᴋ:** [ᴠɪsɪᴛ ғʀᴏᴍ ʜᴇʀᴇ]({channellink})
+**ᴠɪᴅᴇᴏ ʟɪɴᴋ:** [ʟɪɴᴋ]({link})
 """
             key = InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="🎥 ᴡᴀᴛᴄʜ ", url=f"{link}"),
-                        InlineKeyboardButton(text="🔄 ᴄʟᴏsᴇ", callback_data="close"),
+                        InlineKeyboardButton(text=" ᴡᴀᴛᴄʜ ", url=f"{link}"),
+                        InlineKeyboardButton(text=" ᴄʟᴏsᴇ", callback_data="close"),
                     ],
                 ]
             )
@@ -231,37 +231,37 @@ async def start_comm(client, message: Message, _):
 
         try:
             out = music_start_panel(_)
-            vip = await message.reply_text(f"**ᴅιиg ᴅσиg ꨄ︎❣️.....**")
-            await vip.edit_text(f"**ᴅιиg ᴅσиg ꨄ︎.❣️....**")
-            await vip.edit_text(f"**ᴅιиg ᴅσиg ꨄ︎..❣️...**")
-            await vip.edit_text(f"**ᴅιиg ᴅσиg ꨄ︎...❣️..**")
-            await vip.edit_text(f"**ᴅιиg ᴅσиg ꨄ︎....❣️.**")
-            await vip.edit_text(f"**ᴅιиg ᴅσиg ꨄ︎.....❣️**")
+            vip = await message.reply_text(f"**𝐴𝑟𝑎~ 𝐴𝑟𝑎~ ◉‿◉.**")
+            await vip.edit_text(f"**𝐴𝑟𝑎~ 𝐴𝑟𝑎~ ◉‿◉..**")
+            await vip.edit_text(f"**𝐴𝑟𝑎~ 𝐴𝑟𝑎~ ◉‿◉...**")
+            await vip.edit_text(f"**𝐴𝑟𝑎~ 𝐴𝑟𝑎~ ◉‿◉....**")
+            await vip.edit_text(f"**𝐴𝑟𝑎~ 𝐴𝑟𝑎~ ◉‿◉.....**")
+            await vip.edit_text(f"**𝐴𝑟𝑎~ 𝐴𝑟𝑎~ ◉‿◉......**")
 
             await vip.delete()
-            vips = await message.reply_text("**⚡ѕ**")
+            vips = await message.reply_text("**𝑆**")
             await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕт**")
+            await vips.edit_text("**❥𝑆𝑡**")
             # await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтα**")
+            await vips.edit_text("**❥𝑆𝑡𝑎**")
             #  await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαя**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟**")
             # await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαят**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡**")
             # await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαятι**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡𝑖**")
             # await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαятιи**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡𝑖𝑛**")
             # await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαятιиg**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡𝑖𝑛𝑔**")
             # await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαятιиg.**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡𝑖𝑛𝑔.◌**")
             await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαятιиg....**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡𝑖𝑛𝑔..◌**")
             await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαятιиg.**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡𝑖𝑛𝑔...◌**")
             await asyncio.sleep(0.1)
-            await vips.edit_text("**⚡ѕтαятιиg....**")
+            await vips.edit_text("**❥𝑆𝑡𝑎𝑟𝑡𝑖𝑛𝑔....◌**")
             if message.chat.photo:
 
                 userss_photo = await app.download_media(
