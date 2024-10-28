@@ -83,7 +83,7 @@ async def check_auth_token():
         "format": "bestaudio",
         "quiet": True,
         "username": "oauth2",
-        "password": auth_token,
+        "password": "auth_token",
     }
     try:
         with YoutubeDL(opts) as ytdl:
